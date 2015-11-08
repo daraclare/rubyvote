@@ -1,3 +1,12 @@
+@import "jquery.switch";
+@import "owl.carousel";
+@import "owl.theme";
+@import "social-bookmarks";
+@import "aero";
+@import "jquery.fancybox";
+
+
+
 /*
 Theme Name: PLANO SURVEY
 Theme URI: http://www.ansonika.com/plano/
@@ -18,7 +27,7 @@ CSS STRUCTURE:
 /*============================================================================================*/
 body {
 	background:#fff;
-	font:13px/20px 'Open Sans', Arial, sans-serif;
+	font:16px/1.5em 'Open Sans', Arial, sans-serif;
 	color: #333;
 	-webkit-font-smoothing: antialiased !important;
 }
@@ -33,7 +42,7 @@ h6 {
   margin: 0 0 10px 0;
   font-family: inherit;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 1.4em;
   color: inherit;
   text-rendering: optimizelegibility;
   font-family: 'Open Sans', Arial, sans-serif;
@@ -48,49 +57,45 @@ h1,h2 {
 	color:#fff;
 }
 .main-title h1{
-	font-size:44px;
-	line-height:40px;
-	margin-top:60px;
+	font-size:2.75em;
+	margin-top:1.5em;
 }
 .main-title p {
-	font-size:26px;
+	font-size:1.6em;
 	font-weight:300;
 	margin-top:-5px;
 	text-align:center;
+	padding: .5em 0 1em 0;
 }
 h2 {
-  font-size: 32px;
-  line-height:30px;
+  //font-size: 2em;
   margin-bottom:45px;
 }
 h2 span{
-  font-size: 24px;
   font-weight:300;
   text-transform:none;
   display:block;
 }
 h3 {
-  font-size: 32px;
+  font-size: 2em;
   font-weight:600;
   text-align:center;
-  line-height:32px;
   margin-bottom:45px;
 }
 h3 span {
-  font-size: 21px;
+  font-size: 1.3em;
   font-weight:300;
   display:block;
 }
 .step h3 {
 	text-transform:none;
-	font-size:22px;
-	line-height:26px;
+	font-size:1.375em;
 	font-weight:600;
 	margin-bottom:25px;
 	text-align:left;
 }
 .box h3 {
-	font-size:18px;
+	font-size:1.1em;
 	text-transform:uppercase;
 	margin-bottom:5px;
 }
@@ -98,30 +103,27 @@ footer h3 {
 	text-transform:none;
 	font-weight:400;
 	text-align:left;
-	font-size:22px;
+	font-size:1.4em;
 	margin-bottom:10px;
 }
 .question_box h3 {
-	font-size:18px;
+	font-size:1.1em;
 	text-align:left;
-	line-height:22px;
 	margin-bottom:10px;
 }
 
 h4 {
-  font-size: 18px;
-  line-height:22px;
+  font-size: 1.1em;
 }
 
 h5 {
-  font-size: 14px;
-  line-height:14px;
+  font-size: .875em;
 }
 footer h5 {
 	color:#555; 
 }
 h6 {
-  font-size: 12px;
+  font-size: .75em;
 }
 p {
   margin: 0 0 20px 0;
@@ -140,7 +142,7 @@ ol ul {
   margin-bottom: 0;
 }
 li {
-  line-height: 20px;
+  line-height: 1.4em;
 }
 hr {
   margin: 30px 0;
@@ -162,9 +164,9 @@ a:focus {
 }
 
 /** Buttons **/
-.button_medium {
+.button_start {
 	border:none;
-	background:#282828;
+	background:#D94255;
 	color:#fff;
 	padding:7px 20px;
 	text-decoration:none; 
@@ -172,22 +174,45 @@ a:focus {
 	-moz-transition: background .5s ease; 
 	-webkit-transition: background .5s ease; 
 	-o-transition: background .5s ease; 
-	display:inline-block;
+	display: block;
 	cursor:pointer;
 	font-weight:600;
 	text-transform:uppercase;
 	outline:none;
+	position: relative;
+	margin: 0 auto;
 }
 
-a.button_medium:hover, .button_medium:hover {background:#00aeef; color:#fff;}
+a.button_start:hover, .button_start:hover {background:$button_hover_bg; color:#fff;}
+
+.button_medium {
+	border:none;
+	background:#D94255;
+	color:#fff;
+	padding:7px 20px;
+	text-decoration:none; 
+	transition: background .5s ease; 
+	-moz-transition: background .5s ease; 
+	-webkit-transition: background .5s ease; 
+	-o-transition: background .5s ease; 
+	display: block;
+	cursor:pointer;
+	font-weight:600;
+	text-transform:uppercase;
+	outline:none;
+	position: relative;
+	margin: 0 auto;
+}
+
+a.button_medium:hover, .button_medium:hover {background:$button_hover_bg; color:#fff;}
 
 .button_medium_2 {
 	border:none;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	border:2px solid  #282828;
-	color:#282828;
+	border:2px solid $dark_blue;
+	color: $dark_blue;
 	padding:7px 20px;
 	text-decoration:none; 
 	transition: background .5s ease; 
@@ -201,7 +226,7 @@ a.button_medium:hover, .button_medium:hover {background:#00aeef; color:#fff;}
 	outline:none;
 	background:#fff;
 }
-a.button_medium_2:hover {background:#00aeef; color:#fff; border:2px solid  #00aeef;}
+a.button_medium_2:hover {background:$alt_button_hover_bg; color:#fff; border:2px solid  $alt_button_hover_bg;}
 
 
 /** Wizard Buttons **/
@@ -219,7 +244,7 @@ a.button_medium_2:hover {background:#00aeef; color:#fff; border:2px solid  #00ae
 	font-weight:600;
 	text-transform:uppercase;
 	outline:none;
-	background:#282828;
+	background:#D94255;
 	position:relative;
    } 
    
@@ -240,7 +265,7 @@ a.button_medium_2:hover {background:#00aeef; color:#fff; border:2px solid  #00ae
     top: 8px;
     left: 20px;
 	text-transform:none;
-	font-size:9px
+	font-size:.5em;
    } 
  
 .forward {padding:7px 30px 7px 20px;}  
@@ -253,16 +278,16 @@ a.button_medium_2:hover {background:#00aeef; color:#fff; border:2px solid  #00ae
     top: 8px;
     right: 20px;
 	text-transform:none;
-	font-size:9px
+	font-size:.5em;
    } 
    
 .backward:hover, .forward:hover {background:#00aeef; color:#fff;}
 
 
 /** Header ==================== **/
-#top-area {
-	background-color:#1ab9a7;
-	height: 500px;
+#top-nav {
+	background-color:#333E50;
+	//height: 20em;
 }
 header {
 	padding:10px 0;
@@ -273,17 +298,17 @@ header {
 	text-indent:-99999px;
 	background: url("logo.png") no-repeat 0 0;
 	display:block;
-	height:32px;
+	height:2em;
 	width:151px;
 }
 
 #top-nav ul{ float:right; margin:0; padding:0; margin-top:8px;  margin-right:-10px; font-weight:700; text-transform:uppercase;}
-#top-nav ul a { color:#fff; text-decoration:none;}
-#top-nav ul a:hover, #top-nav ul a#active{ color:#323232;}
-#top-nav ul li {float:left; padding-left:10px; margin-right:10px }
+#top-nav ul a { color:#7C8A9D; text-decoration:none;}
+#top-nav ul a:hover, #top-nav ul a#active{ color:#D94255;}
+#top-nav ul li {float:left; padding-left:10px; margin-right:10px; font-size: .8em; }
 #top-nav ul li:first-child{ background:none;}
-#top-nav ul li a#purchase { color: #fff200;}
-#top-nav ul li a#purchase:hover { color:#323232;}
+#top-nav ul li a#purchase { color: #fff;}
+#top-nav ul li a#purchase:hover { color:#D94255;}
 
 /* Button Responsive Menu*/
 .btn-responsive-menu{display: none;float: right;padding:5px;cursor:pointer;margin:  0px 20px 0 0;color: #fff;text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);background:#333;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
@@ -296,13 +321,13 @@ header {
 /** Footer ==================== **/
 footer {
 	width:100%;
-	background:#1ab9a7;
+	background:#333E50;
 	padding:30px 0 0 0;
 	color:#fff;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
 footer a{
-	color: #FF9;
+	color: #FFF;
 }
 #footer_2 {
 	width:100%;
@@ -329,7 +354,7 @@ ul#footer-nav li {
 #copy {
 	padding:15px 0;
 	background-color:#f8f8f8;
-	font-size:11px;
+	font-size:.7em;
 	text-align:center;
 }
 #contact {
@@ -348,7 +373,7 @@ ul#footer-nav li {
 	border-bottom:1px solid #e7e7e7;
 	position:relative;
 	text-transform:uppercase;
-	font-size:11px;
+	font-size:1em;
 }
 .shadow {
 	width:100%;
@@ -370,7 +395,7 @@ ul#footer-nav li {
 #survey_container {
 	background-color:#fff;
 	 box-shadow: 0 0 5px #777;
-	 margin-top:-300px;
+	 margin-top:-117px;
 	 margin-bottom:60px;
 	 z-index:9;
 	 position:relative;
@@ -403,14 +428,14 @@ ul#footer-nav li {
 #complete i {
 	color:#cacaca;
 	margin: 0 0 10px 0;
-	font-size:160px;
+	font-size:10em;
 	padding:0;
 }
 #complete button{
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	font-size:18px;
+	font-size:1.1em;
 	border:2px solid  #8dc63f;
 	color:#8dc63f;
 	padding:15px 35px;
@@ -434,8 +459,8 @@ ul#footer-nav li {
 .box {text-align:center;}
 
 .box span {
-	font-size:100px;
-	color:#1ab9a7;
+	font-size:6.25em;
+	color:#333E50;
 	font-weight:800;
 	display:block;
 	margin:40px 0 43px 0 ;
@@ -451,7 +476,7 @@ ul#footer-nav li {
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
-    font-size: 30px;
+    font-size: 1.85em;
     position: absolute;
 	color:#999;
     top: 5px;
@@ -553,8 +578,8 @@ input.form-control, select.form-control, textarea.form-control {
     box-shadow: none;
     -webkit-transition: none;
   	color: #999;
-	height:44px;
-	font-size:16px;
+	height:2.75em;
+	font-size:1em;
 	font-weight:400;
 	margin-bottom:25px;
 	font-family: 'Open Sans', Arial, sans-serif;
@@ -587,7 +612,7 @@ input.form-control:focus, select.form-control:focus, textarea.form-control:focus
 .styled-select {
    width: 100%;
       overflow:hidden;
-   height: 44px;
+   height: 2.5em;
    background: #fbfbfb url("down_arrow_select.png") no-repeat  98% center ;
 	border:2px solid #d5d5d5;
 	margin-bottom:-5px;
@@ -607,7 +632,7 @@ ul.floated li {
 	margin:0; padding:0;
 	width:30%;
    } 
- label.label_gender {padding-left:50px; line-height:42px;}
+ label.label_gender {padding-left:50px; line-height:1.4em;}
  
  ul.floated li#age {
 	 width:100px;
@@ -627,15 +652,15 @@ ul.data-list-2 li {
 ul.data-list-2 li label {
 	float:left;
 	margin-left:60px;
-	font-size:18px;
+	font-size:1.1em;
 	font-weight:400;
 	margin-top:9px;
-	line-height:22px;
+	line-height:1.4em;
    }  
 
 ul.data-list#terms  {
 	font-weight:400;
-	line-height:22px;
+	line-height:1.4em;
 	margin:0;
 	padding:0;
 	text-align:center;
@@ -653,13 +678,13 @@ input.qtyminus { background:#fff url("minus.png") no-repeat center center; right
 
 /** Common style**/   
 label.error{
-	font-size:11px;
+	font-size:.7em;
 	position: absolute;
 	top:-28px;
 	right:-15px;
 	z-index:99;
 	height:25px;
-	line-height:25px;
+	line-height:1.4em;
 	background-color:#e34f4f;
 	color:#fff;
 	font-weight:normal;
@@ -692,14 +717,14 @@ ul.data-list#terms li label.error {
 
 /** Error styles for survey questions**/   
 ul.data-list-2 li label.error {
-	   	font-size:11px;
+	   	font-size:.7em;
 	   	position: absolute;
 		top:-30px;
 		right:-10px;
 		margin:0;
 		z-index:99;
 		height:25px;
-		line-height:25px;
+		line-height:1.4em;
 		background-color:#e34f4f;
 		color:#fff;
 		font-weight:normal;
@@ -713,7 +738,7 @@ input#website {display: none; }
 /* twitter feed*/
 .tweets-next, .tweets-prev{
 	display: inline-block;
-	font-size: 28px;
+	font-size: 1.75em;
 	color: #FFF;
 	margin-top:10px;
 }
@@ -723,7 +748,7 @@ input#website {display: none; }
 .tweet-control {margin-bottom:30px;}
 
 /* scroll to top */
-#toTop {width:100px;background:#111;text-align:center;padding:5px;position:fixed; bottom:10px;right:10px;cursor:pointer; display:none;color:#fff;font-size:11px; z-index:999;}
+#toTop {width:100px;background:#111;text-align:center;padding:5px;position:fixed; bottom:10px;right:10px;cursor:pointer; display:none;color:#fff;font-size:.9em; z-index:999;}
 
 /* spacing */
 .add_top_30 {margin-top:30px;}
@@ -756,7 +781,7 @@ input#website {display: none; }
 }
 .close {
   float: right;
-  font-size: 21px;
+  font-size: 1.3em;
   font-weight: bold;
   line-height: 1;
   color: #555;
@@ -802,21 +827,22 @@ input#website {display: none; }
 	
 /* From tablet portrait to mobile */
 @media (max-width: 767px) {
+
 	
 #top-nav		{width:100%;float:left;}
 #top-nav			{display:none;}
 #top-nav ul	{float: none; padding:20px 0 20px 0; margin:0; } 
-#top-nav ul li 	{float: none; border-bottom: 1px solid rgba(255, 255, 255, 0.3); font-size:14px; padding:0; margin:0;}
+#top-nav ul li 	{float: none; border-bottom: 1px solid rgba(255, 255, 255, 0.3); font-size:.85em; padding:0; margin:0;}
 #top-nav ul li:last-child{ border-bottom:none;}
 #top-nav ul li a	{ display:block; padding:5px;}
 #top-nav ul a#active{ color:#323232; background-color:#ddd;}
 .btn-responsive-menu{display:block;}	
 
-.main-title h1{font-size:32px;line-height:30px;}
-.main-title p {font-size:16px;}
+.main-title h1{font-size:2em;line-height:1.4em; padding-bottom: 10px;}
+.main-title p {font-size:1em; padding: .5em 0 1em 0;}
 
-h2, h3 {font-size: 26px;line-height:26px;margin-bottom:30px;}
-h2 span, h3 span{font-size: 16px; line-height:18px}
+h2, h3 {font-size: 1.625em;line-height:1.625em;margin-bottom:30px;}
+h2 span, h3 span{font-size: .8em; line-height:1.4em}
 
 #top-wizard {padding:15px 6s0px;}
 #middle-wizard {padding: 20px 30px 20px 30px;}
@@ -845,8 +871,9 @@ ul.floated li {
 /* Mobile Landscape */
 @media (max-width: 480px) {
 
-.main-title h1{font-size:24px;line-height:26px; margin-top:30px;}
-.main-title p {font-size:14px; line-height:16px; }
+
+.main-title h1{font-size:2em; margin-top:30px;}
+.main-title p {font-size:1.2em; padding: .5em .5em 1em .5em;}
 
 #top-nav ul	{float: none; padding:20px 0 40px 0; margin:0; } 
 #top-wizard {padding:15px 30px;}
@@ -860,26 +887,27 @@ ul.floated li {
 .backward:before, .forward:before, button[disabled].backward:before, button[disabled].forward:before {
 	text-indent:0;
 	top:12px;
-	font-size:16px;
+	font-size:1em;
    } 
    
-.qty-buttons span { top:10px; display:block; width:100px; left:120px; font-weight:bold; line-height:12px;}
+.qty-buttons span { top:10px; display:block; width:100px; left:120px; font-weight:bold; line-height:1.4em;}
 
 #complete{padding: 0 25px 15px 25px;}
-#complete h3{ font-size:18px; margin-bottom:20px}
-#complete i {font-size:80px;padding:0;}
+#complete h3{ font-size:1.1em; margin-bottom:20px}
+#complete i {font-size:5em;padding:0;}
 }
 
 /* Mobile Portrait */
 @media only screen and (max-width: 320px) {
 
-.main-title h1{font-size:24px;line-height:26px; margin-top:25px;}
+.main-title h1{font-size:1.5em; margin-top:25px;}
 #survey_container {margin-top:-330px;margin-bottom:30px;}
 #top-nav ul	{float: none; padding:20px 0 10px 0; margin:0; } 
 ul#footer-nav li {display:block;margin-right:0;}
 ul#footer-nav li:first-child {margin-right:0;}
-.step h3 {font-size:18px;line-height:22px; margin-bottom:20px}
-#complete h3{ font-size:18px; margin-bottom:20px}
+.step h3 {font-size:1.1em; margin-bottom:20px}
+#complete h3{ font-size:1.1em; margin-bottom:20px}
 #complete{padding: 0 15px 15px 15px;}
 
 }
+

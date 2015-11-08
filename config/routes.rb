@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+
+  
+resources :polls do
+  resources :questions
+end
+
+get 'polls' => "polls#index"
+
+
+  resources :pages
+
+
   get 'pages/home'
 
   get 'pages/about'

@@ -21,6 +21,25 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
+
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+gem 'font-awesome-sass', '~> 4.4'
+gem 'haml', '~> 4.0', '>= 4.0.7'
+gem 'factory_girl', '~> 4.5'
+gem 'pry', '~> 0.10.3'
+gem 'respond-js-rails', '~> 1.4', '>= 1.4.2.1'
+gem 'retina_rails', '~> 2.0', '>= 2.0.3'
+gem 'modernizr-rails', '~> 2.7', '>= 2.7.1'
+gem 'fancybox', '~> 0.0.20'
+gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
+gem 'bxslider-rails', '~> 4.2', '>= 4.2.5.1'
+gem 'jquery-placeholder-rails', '~> 2.1', '>= 2.1.2'
+gem 'zepto-rails', '~> 0.1.0'
+
+
+
+  
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
@@ -35,14 +54,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'minitest', '~> 5.8', '>= 5.8.2'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
-  gem 'bootstrap-sass', '~> 3.2.0'
-  gem 'autoprefixer-rails' 
+ 
+
+
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'

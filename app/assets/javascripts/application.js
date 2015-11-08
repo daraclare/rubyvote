@@ -11,6 +11,36 @@
 // about supported directives.
 //
 //= require jquery
+
+//= require jquery-1.10.2.min
+//= require jquery-ui-1.8.22.min
+
 //= require jquery_ujs
 //= require turbolinks
+//= require bootstrap
+
+
+//= require jquery.wizard
+//= require check_radio/jquery.icheck
+
+//= modernizr.custom.17475
+//= require respond.min
+//= require jquery.validate
+//= require jquery.placeholder
+//= require jquery.tweet
+//= require jquery.bxslider.min
+//= require quantity-bt
+//= require retina
+//= require owl.carousel.min
+//= require functions
+//= require zepto
+
+//= require fancybox/source/jquery.fancybox.pack
+//= require fancybox/source/helpers/jquery.fancybox-media
+//= require fancy_func
+
+//= require mobile-menu
+
+//= require modernizr.custom.17475
+
 //= require_tree .
