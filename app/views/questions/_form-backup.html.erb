@@ -34,21 +34,14 @@
               <% end %>
             </div>
 
-
-            <p>
-              <label>Specify some choices:</label>
-            </p>
-
-
-
             <%= f.fields_for :possible_answers do |c| %>
-             <%= c.text_field :title, placeholder: "Enter a possible answer here" %>
+             <%= c.text_field :title %>
              <% end %>
 
 
-          <%= f.hidden_field :poll_id %>
+          
             <div class="actions">
-              <%= f.submit 'Save' %>
+              <%= f.submit %>
             </div>
           <% end %>
 

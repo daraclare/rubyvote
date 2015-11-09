@@ -17,6 +17,7 @@ class QuestionsController < ApplicationController
   # GET /questions/new
   def new
     @question = @poll.questions.build
+    5.times { @question.possible_answers.build }
   end
 
   # GET /questions/1/edit
@@ -71,7 +72,7 @@ class QuestionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def question_params
-      params.require(:question).permit(:title, :kind, :poll_id)
+      params.require(:question).permit(:title, :kind, :poll_id, { possible_answers_attributes: [ :title, :question_id ] })
     end
 
     def set_kind_questions
