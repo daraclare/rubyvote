@@ -14,10 +14,10 @@
       <%= link_to 'Back', polls_path %>
 
       <ul>
-        <%- @poll.questions.each do |questions| %>
+        <%- @poll.questions.each do |question| %>
         <li><%= questions.title %></li>
         <ul>
-          <%- @question.possible_answers.each do |possible_answer| %>
+          <%- question.possible_answers.each do |possible_answer| %>
           <li><%= possible_answer.title %></li>
           <%- end %>
         </ul>
