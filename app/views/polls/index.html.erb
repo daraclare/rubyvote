@@ -12,6 +12,7 @@
       <button class="btn btn-default"><%= link_to 'Edit', edit_poll_path(poll) %></button>
       <button class="btn btn-default"><%= link_to 'Back', poll_path(poll) %></button>
       <button class="btn btn-default"><%= link_to 'Add question', new_poll_question_path(poll) %></button>
+       <button class="btn btn-default"><%= link_to 'Answer', new_poll_reply_path(poll) %></button>
       <button class="btn btn-default"><%= link_to 'Destroy', poll, method: :delete, data: { confirm: 'Are you sure?' } %></button>
       
       <% end %>

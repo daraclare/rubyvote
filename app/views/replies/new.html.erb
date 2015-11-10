@@ -1,0 +1,13 @@
+<h1> <%= @poll.title %> </h1>
+
+<%= form_for [ @poll, @reply ] do |f| %>
+	<%= f.fields_for :answers do |c|  %>
+
+	<% end %>
+
+	<p>
+		
+		<label><%= c.object.question.title %></label>
+	</p>
+
+	<% end %>

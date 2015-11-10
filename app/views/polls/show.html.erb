@@ -20,19 +20,14 @@
 
 
 			<ul>
-			<% @poll.questions.each do |questions|%>
-				
-				<li> <%= questions.title %> </li>
-
-				<% end %>
-			</ul>
-
-			<ul>
-			<% @question.possible_answers.each do |possible_answer|%>
-				
-				<li> <%= possible_answer.title %> </li>
-
-				<% end %>
+				<% @poll.questions.each do |question| %>
+				<li><%= question.title %></li>
+					<ul>
+						<% question.possible_answers.each do |possible_answer| %>
+						<li><%= possible_answer.title %></li>
+						<%- end %>
+					</ul>
+				<%- end %>
 			</ul>
 
 
