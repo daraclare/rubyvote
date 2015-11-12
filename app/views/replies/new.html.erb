@@ -1,13 +1,23 @@
-<h1> <%= @poll.title %> </h1>
+<section class="container">
+           
+    <div class="row">
+             
+		<div class="col-md-12">
 
-<%= form_for [ @poll, @reply ] do |f| %>
-	<%= f.fields_for :answers do |c|  %>
+			<h1> <%= @poll.title %> </h1>
 
-	<% end %>
+			<%= form_for [ @poll, @reply ] do |f| %>
+			<%= f.fields_for :answers do |c|  %>
+			<!-- <p><label><%= c.object.question.title %></label></p> -->
+			<%= render c.object.question.kind, c: c %>
 
-	<p>
-		
-		<label><%= c.object.question.title %></label>
-	</p>
+			<% end %>
+			<%= f.submit "Finish poll", class: "btn btn-primary" %>
 
-	<% end %>
+			<% end %>
+
+		</div>
+
+    </div>
+
+</section>

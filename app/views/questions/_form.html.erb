@@ -21,7 +21,7 @@
 
             <div class="field">
               <%= f.label :title %><br>
-              <%= f.text_field :title %>
+              <%= f.text_field :title, class: "form-control input-lg" %>
             </div>
 
 
@@ -42,13 +42,13 @@
 
 
             <%= f.fields_for :possible_answers do |c| %>
-             <%= c.text_field :title, placeholder: "Enter a possible answer here" %>
+             <%= c.text_field :title, placeholder: "Enter a possible answer here", class: "form-control" %>
              <% end %>
 
 
           <%= f.hidden_field :poll_id %>
             <div class="actions">
-              <%= f.submit 'Save' %>
+              <%= f.submit 'Save', class: "btn btn-primary" %>
             </div>
           <% end %>
 
