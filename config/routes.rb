@@ -6,7 +6,9 @@ resources :polls do
   resources :replies, only: [ :new, :create ]
 end
 
-get 'polls' => "polls#index"
+  get 'polls' => "polls#index"
+  get 'home' => "pages#home"
+  get 'about' => "pages#about"
 
 
   resources :pages

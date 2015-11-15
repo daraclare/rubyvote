@@ -2,14 +2,15 @@
     <header>
          <div class="container">
             <div class="row">
-            <div class="col-md-4 col-xs-3" id="logo"><a href="home">Audience Polling</a></div>
+            <div class="col-md-4 col-xs-3" id="logo"><li><%= link_to "home", home_path, :method => :get %></li></div>
             
             <div class="btn-responsive-menu"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </div>
 
             <nav class="col-md-8 col-xs-9" id="top-nav">
                 <ul>
-                     <li><%= link_to "New poll", new_poll_path, :method => :get %></li>
-                    <li><a href="#" data-toggle="modal" data-target="#myModal">About</a></li>
+                    <li><%= link_to "View polls", polls_path, :method => :get %></li>
+                    <li><%= link_to "New poll", new_poll_path, :method => :get %></li>
+                    <li><%= link_to "About", about_path, :method => :get %></li>
                     <li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
                     
                     
