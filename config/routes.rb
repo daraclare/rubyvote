@@ -13,6 +13,10 @@ end
 
   resources :pages
 
+  get 'home' => "pages#home"
+  get 'about' => "pages#about"
+  get 'polls' => "poll#show"
+
 
   get 'pages/home'
   get 'pages/about'
