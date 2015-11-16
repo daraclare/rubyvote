@@ -25,6 +25,30 @@ section.container {
 
             }
 
+            ul.list-group {
+                
+                li.list-group-item {
+                    border: none;
+                }
+            }
+
+            ul.poll-list {
+                
+                text-align: center;
+                margin-left: 0;
+                margin-right: 0;
+
+                
+
+                li {
+                    a {
+                        text-align: center;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+
             a {
 
             }

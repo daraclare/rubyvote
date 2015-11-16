@@ -182,6 +182,10 @@ a:focus {
 	outline:none;
 	position: relative;
 	margin: 0 auto;
+    margin-bottom: 1em;
+	a {
+		color: #fff;
+	}
 }
 
 a.button_start:hover, .button_start:hover {background:$button_hover_bg; color:#fff;}

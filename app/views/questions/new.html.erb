@@ -5,16 +5,15 @@
 	   	<div class="col-md-12">
 
 
-			<h1>New Question</h1>
+			<h1>Add new question to <%= link_to @poll.title, @poll %></h1>
 
 			<%= render 'form' %>
 
-			<%= link_to 'Back', @poll %>
+			<p><%= link_to 'Back', @poll %></p>
 		
 		</div>
 	</div>
 
 </section>
-
 
 
