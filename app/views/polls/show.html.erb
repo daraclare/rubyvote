@@ -4,6 +4,24 @@
 			<p id="notice"><%= notice %></p>
 
 			<h1><%= @poll.title %></h1>
+
+<!-- start of tabs -->
+	<div>
+
+	<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+			<%= link_to "Questions", "#tab-questions", data: { toggle: "tab"} %></li>
+			<li role="presentation">
+			<%= link_to "Replies", "#tab-replies", data: { toggle: "tab"} %></li>
+			<li role="presentation">
+			<%= link_to "Stats", "#tab-stats", data: { toggle: "tab"} %></li>
+			
+		</ul>
+
+	<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="tab-questions">
 			<h2>Questions</h2>
 
 				<ul class="list-group">
@@ -18,16 +36,57 @@
 					<% end %>
 				</ul>
 
+				<p class="btn-group"> 
+			
+				<%= link_to 'Edit', edit_poll_path(@poll), class: "btn btn-default" %>
+				<%= link_to 'Back', polls_path, class: "btn btn-default"  %>
+				<%= link_to 'Add question', new_poll_question_path(@poll), class: "btn btn-default"  %>
+				</p>
+
+
+			</div>
+			<div role="tabpanel" class="tab-pane" id="tab-replies">
+
+			<h2>Replies</h2>
+				<% @poll.replies.each do |reply| %>
+				<div>
+					<div>
+						<div>
+							<dl>
+							<% reply.answers.each do |answer| %>
+							  <dt><%= answer.question.title %></dt>
+							  <dd><%= answer.value.present? ? answer.value : answer.possible_answer.title %></dd>
+							  <% end %>
+							   <% end %>
+							</dl>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div role="tabpanel" class="tab-pane" id="tab-stats">
+			<h2>Statistics</h2>
+			<div><p>Empty space for stats</p></div>
+
+			</div>
+			
+		</div>
+
+	</div>
+<!-- end of tabs -->
 			
 
 
 
-			<p class="btn-group"> 
+
+				
+
 			
-			<%= link_to 'Edit', edit_poll_path(@poll), class: "btn btn-default" %>
-			<%= link_to 'Back', polls_path, class: "btn btn-default"  %>
-			<%= link_to 'Add question', new_poll_question_path(@poll), class: "btn btn-default"  %>
-			</p>
+
+
+
+			
 
 
 
