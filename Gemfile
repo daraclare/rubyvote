@@ -36,6 +36,7 @@ gem 'bxslider-rails', '~> 4.2', '>= 4.2.5.1'
 gem 'jquery-placeholder-rails', '~> 2.1', '>= 2.1.2'
 gem 'zepto-rails', '~> 0.1.0'
 gem 'devise'
+gem 'rails_12factor', '~> 0.0.3'
 
 group :production do 
 	gem 'pg'
