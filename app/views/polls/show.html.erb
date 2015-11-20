@@ -1,0 +1,98 @@
+<section class="container">
+    <div class="row">
+		<div class="col-md-12">
+			<p id="notice"><%= notice %></p>
+
+			<h1><%= @poll.title %></h1>
+
+<!-- start of tabs -->
+	<div>
+
+	<!-- Nav tabs -->
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+			<%= link_to "Questions", "#tab-questions", data: { toggle: "tab"} %></li>
+			<li role="presentation">
+			<%= link_to "Replies", "#tab-replies", data: { toggle: "tab"} %></li>
+			<li role="presentation">
+			<%= link_to "Statistics", "#tab-stats", data: { toggle: "tab"} %></li>
+		</ul>
+
+	<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="tab-questions">
+			<h2>Questions</h2>
+
+				<ul class="list-group">
+					<% @poll.questions.each do |question| %>
+					<li class="list-group-item"><%= question.title %>
+						<ul class="list-group inner">
+							<% question.possible_answers.each do |possible_answer| %>
+							<li class="list-group-item"><%= possible_answer.title %></li>
+							<% end %>
+						</ul>
+					</li>
+					<% end %>
+				</ul>
+
+				<p class="btn-group"> 
+			
+				<%= link_to 'Edit', edit_poll_path(@poll), class: "btn btn-default" %>
+				<%= link_to 'Back', polls_path, class: "btn btn-default"  %>
+				<%= link_to 'Add question', new_poll_question_path(@poll), class: "btn btn-default"  %>
+				</p>
+
+
+			</div>
+			<!-- end of questions tabs -->
+
+			<!-- start of replies tab -->
+			<div role="tabpanel" class="tab-pane" id="tab-replies">
+
+			<h2>Replies</h2>
+				<% @poll.replies.each do |reply| %>
+				<div>
+					<div>
+						<div>
+							<dl>
+							<% reply.answers.each do |answer| %>
+							  <dt><%= answer.question.title %></dt>
+							  <dd><%= answer.value.present? ? answer.value : answer.possible_answer.title %></dd>
+							  <% end %>
+							   <% end %>
+							</dl>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div role="tabpanel" class="tab-pane" id="tab-stats">
+			
+			</div>
+			
+		</div>
+
+	</div>
+<!-- end of tabs -->
+			
+
+
+
+
+				
+
+			
+
+
+
+			
+
+
+
+
+
+		</div>
+    </div>
+</section>
+        

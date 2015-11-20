@@ -1,0 +1,164 @@
+/*--------------------------------------------------
+			SOCIAL-BOOKMARKS
+---------------------------------------------------*/
+.social-bookmarks {
+	padding: 0;
+	margin: 15px 0 10px 0;
+	list-style-type: none;
+	float:right;
+}
+
+.social-bookmarks li, .widget .social-bookmarks li, #footer .social-bookmarks li {
+	float: left;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	padding: 0px;
+	background-color: none;
+	display: inline;
+	width: auto;
+}	
+#footer .social-bookmarks li {
+	float: left;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	padding: 0px;
+}	
+#footer.social-bookmarks li a {
+	display: block;
+	float: left;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+}	
+.social-bookmarks li a {
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: background-color 5s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	display: block;
+	float: left;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	text-indent: -9999px;
+}	
+
+.social-bookmarks li.apple a {
+	background: url(/assets/socialize-icons/apple.png) no-repeat 0 0;
+}
+.social-bookmarks li.apple a:hover {
+	background-color: #606060;
+}
+.social-bookmarks li.behance a {
+	background: url(/assets/socialize-icons/behance.png) no-repeat 0 0;
+}
+.social-bookmarks li.behance a:hover {
+	background-color: #18a3fe;
+}
+
+
+.social-bookmarks li.dribbble a {
+	background: url(/assets/socialize-icons/dribbble.png) no-repeat 0 0;
+}
+.social-bookmarks li.dribbble a:hover {
+	background-color: #ef5b92;
+}
+
+.social-bookmarks li.facebook a {
+	background: url(/assets/socialize-icons/facebook.png) no-repeat 0 0;
+}
+.social-bookmarks li.facebook a:hover {
+	background-color: #3b5998;
+}
+
+.social-bookmarks li.github a {
+	background: url(/assets/socialize-icons/github.png) no-repeat 0 0;
+}
+.social-bookmarks li.github a:hover {
+	background-color: #7292a2;
+}
+.social-bookmarks li.google a {
+	background: url(/assets/socialize-icons/google.png) no-repeat 0 0;
+}
+.social-bookmarks li.google a:hover {
+	background-color: #dd4b39;
+}
+.social-bookmarks li.googleplus a {
+	background: url(/assets/socialize-icons/googleplus.png) no-repeat 0 0;
+}
+.social-bookmarks li.googleplus a:hover {
+	background-color: #d94a39;
+}
+
+.social-bookmarks li.html5 a {
+	background: url(/assets/socialize-icons/html5.png) no-repeat 0 0;
+}
+.social-bookmarks li.html5 a:hover {
+	background-color: #f3642c;
+}
+
+.social-bookmarks li.linkedin a {
+	background: url(/assets/socialize-icons/linkedin.png) no-repeat 0 0;
+}
+.social-bookmarks li.linkedin a:hover {
+	background-color: #71b2d0;
+}
+
+
+.social-bookmarks li.paypal a {
+	background: url(/assets/socialize-icons/paypal.png) no-repeat 0 0;
+}
+.social-bookmarks li.paypal a:hover {
+	background-color: #32689a;
+}
+
+.social-bookmarks li.pinterest a {
+	background: url(/assets/socialize-icons/pinterest.png) no-repeat 0 0;
+}
+.social-bookmarks li.pinterest a:hover {
+	background-color: #cb2027;
+}
+
+
+.social-bookmarks li.rss a {
+	background: url(/assets/socialize-icons/rss.png) no-repeat 0 0;
+}
+.social-bookmarks li.rss a:hover {
+	background-color: #fe9900;
+}
+.social-bookmarks li.skype a {
+	background: url(/assets/socialize-icons/skype.png) no-repeat 0 0;
+}
+.social-bookmarks li.skype a:hover {
+	background-color: #18b7f1;
+}
+
+
+.social-bookmarks li.twitter a {
+	background: url(/assets/socialize-icons/twitter.png) no-repeat 0 0;
+}
+.social-bookmarks li.twitter a:hover {
+	background-color: #48c4d2;
+}
+.social-bookmarks li.vimeo a {
+	background: url(/assets/socialize-icons/vimeo.png) no-repeat 0 0;
+}
+.social-bookmarks li.vimeo a:hover {
+	background-color: #62a0ad;
+}
+
+.social-bookmarks li.youtube a {
+	background: url(/assets/socialize-icons/youtube.png) no-repeat 0 0;
+}
+.social-bookmarks li.youtube a:hover {
+	background-color: #f45750;
+}
+
+.social-bookmarks li a:hover {
+	background-position: 0 -40px;
+}

@@ -1,0 +1,63 @@
+
+<section class="container">
+           
+    <div class="row">
+
+      <div class="col-md-12">
+
+
+          <%= form_for [ @poll, @question ] do |f| %>
+            <% if @question.errors.any? %>
+              <div id="error_explanation">
+                <h2><%= pluralize(@question.errors.count, "error") %> prohibited this question from being saved:</h2>
+
+                <ul>
+                <% @question.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+                <% end %>
+                </ul>
+              </div>
+            <% end %>
+
+            <div class="field">
+              <%= f.label :title %><br>
+              <%= f.text_field :title, class: "form-control input-lg" %>
+            </div>
+
+
+            <div class="radio">
+              <% @kind_options.each do |options| %>
+              <label>
+              <%= f.radio_button :kind, options[1] %>
+              <%= options[0] %>
+              </label>
+              <% end %>
+            </div>
+
+
+            <p>
+              <label>Specify some choices:</label>
+            </p>
+
+
+
+            <%= f.fields_for :possible_answers do |c| %>
+             <%= c.text_field :title, placeholder: "Enter a possible answer here", class: "form-control" %>
+             <% end %>
+
+
+          <%= f.hidden_field :poll_id %>
+            <div class="actions">
+              <%= f.submit 'Save', class: "btn btn-primary" %>
+            </div>
+          <% end %>
+
+    </div>
+
+  </div>
+  
+</section>
+
+
+
+

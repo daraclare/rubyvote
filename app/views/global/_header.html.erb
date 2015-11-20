@@ -1,0 +1,39 @@
+<section id="top-nav">
+    <header>
+         <div class="container">
+            <div class="row">
+            <div class="col-md-4 col-xs-3" id="logo"><li><%= link_to "home", home_path, :method => :get %></li></div>
+            
+            <div class="btn-responsive-menu"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </div>
+
+            <nav class="col-md-8 col-xs-9" id="top-nav">
+                <ul>
+                    <li><%= link_to "View polls", polls_path, :method => :get %></li>
+                    <li><%= link_to "New poll", new_poll_path, :method => :get %></li>
+                    <li><%= link_to "About", about_path, :method => :get %></li>
+
+                    <!-- start of devise login/logout nav -->
+
+                      <% if current_user %>
+                        <li><a href="#"><%= current_user.email %></a></li>
+                        <li><%= link_to "Edit profile", edit_user_registration_path %></li>
+                        <li><%= link_to destroy_session_path('user'), method: :delete do %>Log out
+                        <% end %>
+                        </li>
+
+                      <% else %>
+                        <li><%= link_to new_session_path('user') do %>Sign in </li>
+                        <li><%= link_to('Register', new_user_registration_path)  %></li>
+                          <% end %>
+                       
+                      <% end %>
+
+                    <!-- end of devise login/logout nav -->
+
+               </ul>
+            </nav><!-- End Nav -->
+            
+            </div><!-- End row -->
+         </div><!-- End container -->
+        </header> <!-- End header -->
+</section>
