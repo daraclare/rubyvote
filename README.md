@@ -1,2 +1,2 @@
 # vote
-An Audience Response Application
+This an Audience Response Application
