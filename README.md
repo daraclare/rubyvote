@@ -1,2 +1,2 @@
 # vote
-An Audience Response Application
+A college project bases ib Ruby on Rails, an Audience Response Application
