@@ -8,20 +8,15 @@
 </head>
 <body>
 
+	<%= render 'global/header' %>
 
+	<%= yield :banner %>
 
-<%= render 'global/header' %>
+	<%= render 'global/messages' %>
 
-<%= render 'global/messages' %>
+	<%= yield %>
 
-<%= yield %>
-
-
-
-
-<%= render 'global/footer' %>
-
-
+	<%= render 'global/footer' %>
 
 </body>
 </html>
