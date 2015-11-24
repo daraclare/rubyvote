@@ -46237,3 +46237,508 @@ Started GET "/assets/socialize-icons/twitter.png" for ::1 at 2015-11-19 16:01:42
 
 
 Started GET "/assets/socialize-icons/github.png" for ::1 at 2015-11-19 16:01:42 +0000
+
+
+Started GET "/" for ::1 at 2015-11-24 19:43:14 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (5.2ms)
+  Rendered global/_header.html.erb (7.6ms)
+  Rendered global/_messages.html.erb (1.1ms)
+  Rendered global/_footer.html.erb (0.6ms)
+Completed 200 OK in 2035ms (Views: 2020.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-1.10.2.min.self-3b980a22cc7f1242cdc4eb4dc9fbdd7912920de0fac9d556369c02f85d2db918.js?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/jquery-ui-1.8.22.min.self-69a760d83426a4e834159d21896b20e378b60d356b3ac321199af993534d7cc7.js?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/jquery_ujs.self-0172cd99cb083fecf2fa571f87eba94130397e7bec1220e1d2ba332c880132a3.js?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/jquery.self-803fddb146c770c51509ad5dff05506481993ad3d28d9dd1c5d75a4b1322e0d9.js?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/jquery.wizard.self-c17c02b7966aa804180efd657c05688d7f439bb811565f493364c06f7c38adb8.js?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/bootstrap.self-49a000b10fc90bcf4e8353604e37d085d4faf26a11d17fc14a5ac054afff6de2.js?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/respond.min.self-2cc64e338c51711ee368360bf2d608e842a02156b23c7d3a018ca97d3a686cfc.js?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/jquery.placeholder.self-8bbc8c90722d305d3dced4b77fcd9612dc29de54e5fab140a8c2762c9c25d20e.js?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/check_radio/jquery.icheck.self-1eca15be90ac374eb4536c8ec175d32db0682159b5d13c7bd3f2e4a41707ff15.js?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/jquery.validate.self-197ea2de8e82e6a4cc56620f964526cf869ee57ffa7b26ef1ecf1871b930b55d.js?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/application.self-76ab67acaf83ed6a03e3e2b3ffa6593ea6db4dc00cf57eaea0b247a430d60449.css?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/owl.carousel.min.self-f0a496cd8985d1e2f0d3590556bf8d2441778252642e11c75ba273105920fd6b.js?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/jquery.tweet.self-99d187914f5003ed4995d3eab6b87de14c4306d3b0a5b42902aec4ff1acca42a.js?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/jquery.bxslider.min.self-931b998c254e20a05eb00ea52930ffa69c226c738316004286f5534a0266c037.js?body=1" for ::1 at 2015-11-24 19:43:16 +0000
+
+
+Started GET "/assets/retina.self-da3bdfefcf6f5365c32b649ca1f71764d173ee0cf2ff786f7558f03af559cff8.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/quantity-bt.self-962582e870abf410f2d6b3273cda46e0af8bc9938bc4f822c4662d1e4f812445.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/zepto.self-4703ec5baff2d87457f29763d7eac10161c2add7c191bfe8e7b926d163ac44b1.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/mobile-menu.self-d73dc985e78d633e22b3704a35be98e1bcc7934f3373ac5935113f172c987cf0.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/fancybox/source/jquery.fancybox.pack.self-f2ec87c8d22679369220b05021d939d04d451059171f0e156e1fff290dc9534a.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/fancybox/source/helpers/jquery.fancybox-media.self-74533021e73f14643354f56c8b5f7f05e4d66e613f7993760cdc8c53d7dadaec.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/functions.self-936820a29bda600b7f764289cc3120c23bbac9b7b07510829649572b37024bbd.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/check_radio/jquery.icheck.min.self-0c3edfd52acad0a1f8acd5899dafad133af940f197f2a661f6fb5231dc104209.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/fancy_func.self-193391a73a0d0d5da00968738e023c7c29c094f807850a4bebcdee28c1e01e6a.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/check_radio/zepto.icheck.self-e9ae925bebbb6d4e0966bef1ed644439630c676e8a6665fbccf9ac950f187826.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/check_radio/zepto.icheck.min.self-a9b1853c041ced919dd419d3c343524d1006e0a6e81de6c45ef357dea8ba6b6f.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/modernizr.custom.17475.self-e2df8ef284491d049ba408ea02a4efcc73cc42b0c258a1280b60dd0a5408ce4d.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/check_radio/zepto.self-4a52a2703194f9979efabb3a194c285b93f9fb5b8f8b2cb2eccd185f8caad1ff.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/fancybox/lib/jquery-1.9.0.min.self-a65f6d002dd3fcc8d10c9f4e13c952d286761f9c32bc12a10f25da997eeed30c.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.self-5556d2e95e38fe8ffc0b5a583072c832ab96d63262d665be0a6e5668fe238f38.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/fancybox/source/helpers/jquery.fancybox-buttons.self-f01662b7da7ca7f9185634414aa66e3a5df76a2112778a6089b723c13781e781.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/fancybox/source/helpers/jquery.fancybox-thumbs.self-196204b1ecbda6b62bf226452d9cff028b7ff53306476112aace35d65e727116.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/fancybox/source/jquery.fancybox.self-2bc7e4c6ccd3a15b63f47639b64b08179384883089b6aa7ebecbccbe60dd2593.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/jquery.tweet.min.self-fdb182e5170eebbcd24c9840e1fe0f50a2be9ac26c427e23d6f4579d854dbe3d.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/owl.carousel.self-1dc82e9ac6e75498f672153583bd97d815469bb3ebda997f28ff804480cc749f.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/placeholder.self-7cc3ccb0bb31468734c00c7bb1a8ebc8cf0a1b4f516237a42cda477343e72438.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/retina.min.self-442ffc86a2ca1b375dd5d7185ea6b77ed5d6de1866df506c764765308cb71b70.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/application.self-b3ac9e3bdcebf7d8c5fd35dc23fa88919cb64767f9804fd178f02fc63ee0c649.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/polls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/icon-1.png" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/questions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/jquery.bxslider.min%20copy.self-931b998c254e20a05eb00ea52930ffa69c226c738316004286f5534a0266c037.js?body=1" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/icon-2.png" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/icon-3.png" for ::1 at 2015-11-24 19:43:17 +0000
+
+
+Started GET "/assets/fancybox/lib/jquery.min.map" for ::1 at 2015-11-24 19:43:17 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/fancybox/lib/jquery.min.map"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (227.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (101.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (225.3ms)
+
+
+Started GET "/assets/line_header.png" for ::1 at 2015-11-24 19:43:18 +0000
+
+
+Started GET "/assets/socialize-icons/facebook.png" for ::1 at 2015-11-24 19:43:18 +0000
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-11-24 19:43:18 +0000
+
+
+Started GET "/assets/divider.png" for ::1 at 2015-11-24 19:43:18 +0000
+
+
+Started GET "/assets/contact_map.png" for ::1 at 2015-11-24 19:43:18 +0000
+
+
+Started GET "/assets/socialize-icons/googleplus.png" for ::1 at 2015-11-24 19:43:18 +0000
+
+
+Started GET "/assets/socialize-icons/twitter.png" for ::1 at 2015-11-24 19:43:18 +0000
+
+
+Started GET "/assets/socialize-icons/github.png" for ::1 at 2015-11-24 19:43:18 +0000
+
+
+Started GET "/assets/socialize-icons/paypal.png" for ::1 at 2015-11-24 19:43:18 +0000
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-24 19:43:20 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (66.6ms)
+  Rendered global/_header.html.erb (1.0ms)
+  Rendered global/_messages.html.erb (0.1ms)
+  Rendered global/_footer.html.erb (0.0ms)
+Completed 200 OK in 526ms (Views: 506.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-11-24 19:44:32 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (4.5ms)
+  Rendered global/_header.html.erb (9.9ms)
+  Rendered global/_messages.html.erb (1.1ms)
+  Rendered global/_footer.html.erb (0.9ms)
+Completed 200 OK in 1435ms (Views: 1419.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/icon-2.png" for ::1 at 2015-11-24 19:44:34 +0000
+
+
+Started GET "/assets/icon-3.png" for ::1 at 2015-11-24 19:44:34 +0000
+
+
+Started GET "/assets/icon-1.png" for ::1 at 2015-11-24 19:44:34 +0000
+
+
+Started GET "/assets/fancybox/lib/jquery.min.map" for ::1 at 2015-11-24 19:44:35 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/fancybox/lib/jquery.min.map"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (228.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (108.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (239.7ms)
+
+
+Started GET "/assets/line_header.png" for ::1 at 2015-11-24 19:44:35 +0000
+
+
+Started GET "/assets/contact_map.png" for ::1 at 2015-11-24 19:44:35 +0000
+
+
+Started GET "/assets/divider.png" for ::1 at 2015-11-24 19:44:35 +0000
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-11-24 19:44:35 +0000
+
+
+Started GET "/assets/socialize-icons/facebook.png" for ::1 at 2015-11-24 19:44:35 +0000
+
+
+Started GET "/assets/socialize-icons/googleplus.png" for ::1 at 2015-11-24 19:44:35 +0000
+
+
+Started GET "/assets/socialize-icons/twitter.png" for ::1 at 2015-11-24 19:44:35 +0000
+
+
+Started GET "/assets/socialize-icons/github.png" for ::1 at 2015-11-24 19:44:35 +0000
+
+
+Started GET "/assets/socialize-icons/paypal.png" for ::1 at 2015-11-24 19:44:35 +0000
+
+
+Started GET "/users/sign_in" for ::1 at 2015-11-24 19:44:36 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (104.4ms)
+  Rendered global/_header.html.erb (1.1ms)
+  Rendered global/_messages.html.erb (0.1ms)
+  Rendered global/_footer.html.erb (0.0ms)
+Completed 200 OK in 607ms (Views: 589.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-11-24 19:44:39 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.8ms)
+  Rendered global/_header.html.erb (0.9ms)
+  Rendered global/_messages.html.erb (0.1ms)
+  Rendered global/_footer.html.erb (0.0ms)
+Completed 200 OK in 495ms (Views: 493.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/polls" for ::1 at 2015-11-24 19:45:41 +0000
+Processing by PollsController#index as HTML
+  Parameters: {"authenticity_token"=>"qJqKwQHAC8hZDvwranIKbfnBn/WfArxCRw7+OzALB46S9iXgwbXbcUvIleIURepHEp656zdE9dk7+d+oTuNB2Q=="}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "polls"
+  [1m[36mPoll Load (0.1ms)[0m  [1mSELECT "polls".* FROM "polls"[0m
+  Rendered polls/index.html.erb within layouts/application (4.0ms)
+  Rendered global/_header.html.erb (1.1ms)
+  Rendered global/_messages.html.erb (0.1ms)
+  Rendered global/_footer.html.erb (0.1ms)
+Completed 200 OK in 450ms (Views: 434.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/fancybox/lib/jquery.min.map" for ::1 at 2015-11-24 19:45:42 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/fancybox/lib/jquery.min.map"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (218.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (81.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (186.4ms)
+
+
+Started GET "/assets/line_header.png" for ::1 at 2015-11-24 19:45:42 +0000
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-11-24 19:45:42 +0000
+
+
+Started GET "/assets/contact_map.png" for ::1 at 2015-11-24 19:45:42 +0000
+
+
+Started GET "/assets/socialize-icons/googleplus.png" for ::1 at 2015-11-24 19:45:42 +0000
+
+
+Started GET "/assets/socialize-icons/facebook.png" for ::1 at 2015-11-24 19:45:42 +0000
+
+
+Started GET "/assets/socialize-icons/twitter.png" for ::1 at 2015-11-24 19:45:42 +0000
+
+
+Started GET "/assets/socialize-icons/paypal.png" for ::1 at 2015-11-24 19:45:42 +0000
+
+
+Started GET "/assets/socialize-icons/github.png" for ::1 at 2015-11-24 19:45:42 +0000
+
+
+Started GET "/" for ::1 at 2015-11-24 19:45:47 +0000
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered global/_header.html.erb (1.0ms)
+  Rendered global/_messages.html.erb (0.1ms)
+  Rendered global/_footer.html.erb (0.0ms)
+Completed 200 OK in 433ms (Views: 432.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/icon-2.png" for ::1 at 2015-11-24 19:45:48 +0000
+
+
+Started GET "/assets/icon-3.png" for ::1 at 2015-11-24 19:45:48 +0000
+
+
+Started GET "/assets/icon-1.png" for ::1 at 2015-11-24 19:45:48 +0000
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-11-24 19:45:48 +0000
+
+
+Started GET "/assets/contact_map.png" for ::1 at 2015-11-24 19:45:48 +0000
+
+
+Started GET "/assets/divider.png" for ::1 at 2015-11-24 19:45:48 +0000
+
+
+Started GET "/assets/socialize-icons/twitter.png" for ::1 at 2015-11-24 19:45:48 +0000
+
+
+Started GET "/assets/socialize-icons/facebook.png" for ::1 at 2015-11-24 19:45:48 +0000
+
+
+Started GET "/assets/socialize-icons/googleplus.png" for ::1 at 2015-11-24 19:45:48 +0000
+
+
+Started GET "/assets/line_header.png" for ::1 at 2015-11-24 19:45:48 +0000
+
+
+Started GET "/assets/socialize-icons/github.png" for ::1 at 2015-11-24 19:45:48 +0000
+
+
+Started GET "/assets/socialize-icons/paypal.png" for ::1 at 2015-11-24 19:45:48 +0000
+
+
+Started GET "/assets/fancybox/lib/jquery.min.map" for ::1 at 2015-11-24 19:45:48 +0000
+
+ActionController::RoutingError (No route matches [GET] "/assets/fancybox/lib/jquery.min.map"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/Cellar/ruby/2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (143.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (86.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (190.7ms)
