@@ -19,7 +19,9 @@ section.container {
         .col-md-12 {
 
             h2#banner-heading {
-                padding-top: 1em;
+                padding-top: 0;
+                text-align: center;
+                margin-bottom: 1em;
             }
            
 
@@ -27,6 +29,13 @@ section.container {
 
                
 
+            }
+
+
+            h2 {
+                margin-top: 45px;
+                text-align: left;
+                margin-bottom: .5em;
             }
 
             ul.list-group {
@@ -57,12 +66,12 @@ section.container {
 
             }
             label {
-                text-transform: none;
-                font-size: 22px;
-                line-height: 26px;
-                font-weight: 600;
-                margin-bottom: 25px;
-                text-align: left;
+                // text-transform: none;
+                // font-size: 22px;
+                // line-height: 26px;
+                // font-weight: 600;
+                // margin-bottom: 25px;
+                // text-align: left;
             }
 
             input#poll_title {
@@ -87,31 +96,33 @@ section.container {
                 }
 
             input[type="submit"] {
-                -webkit-border-radius: 3px;
-                -moz-border-radius: 3px;
-                border-radius: 3px;
-                font-size: 18px;
-                border: 2px solid #D94255;
-                color: #D94255;
-                padding: 15px 35px;
-                text-decoration: none;
-                transition: background .5s ease;
-                -moz-transition: background .5s ease;
-                -webkit-transition: background .5s ease;
-                -o-transition: background .5s ease;
-                display: inline-block;
-                cursor: pointer;
-                font-weight: 600;
-                text-transform: uppercase;
-                outline: none;
-                background: #fff;
-                margin-top: 2em;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                // -webkit-border-radius: 3px;
+                // -moz-border-radius: 3px;
+                // border-radius: 3px;
+                // font-size: 18px;
+                // border: 2px solid #D94255;
+                // color: #D94255;
+                // padding: 15px 35px;
+                // text-decoration: none;
+                // transition: background .5s ease;
+                // -moz-transition: background .5s ease;
+                // -webkit-transition: background .5s ease;
+                // -o-transition: background .5s ease;
+                // display: inline-block;
+                // cursor: pointer;
+                // font-weight: 600;
+                // text-transform: uppercase;
+                // outline: none;
+                // background: #fff;
+                // margin-top: 2em;
 
-                &:hover {
-                background: darken(#D94255, 2);
-                color: #fff;
-                border: 2px solid #D94255;
-                }
+                // &:hover {
+                // background: darken(#D94255, 2);
+                // color: #fff;
+                // border: 2px solid #D94255;
+                // }
             }
 
             
