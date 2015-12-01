@@ -6,14 +6,15 @@
 
       
       
-	<h2>Existing Polls</h2>
+	<h3>Polls</h3>
 	<% unless @polls.any? %>
   	<p class="bg-info flash">No polls.</p>
 	<% end %>
 
 	<ul class="poll-list">
 		<% @polls.each do |poll| %>
-		<li><%= link_to poll.title, new_poll_reply_path(poll) %></li>
+		<li class="poll-list"><h4><%= link_to poll.title, poll_path(poll.id) %></h4><p><%= link_to "Answer this poll", new_poll_reply_path(poll) %></p></li>
+
 		<% end %>
 	</ul>
 

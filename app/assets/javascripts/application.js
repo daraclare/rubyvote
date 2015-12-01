@@ -34,10 +34,10 @@
 //= require owl.carousel.min
 //= require functions
 //= require zepto
+//= require modal
+//= require cocoon
 
-//= require fancybox/source/jquery.fancybox.pack
-//= require fancybox/source/helpers/jquery.fancybox-media
-//= require fancy_func
+
 
 //= require mobile-menu
 

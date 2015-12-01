@@ -76,32 +76,32 @@ jQuery(function($) {
 			});
 
 // OHTER ===============================================================================
- $(document).ready(function(){   
+ // $(document).ready(function(){   
     
-		//Menu mobile
-		$(".btn-responsive-menu").click(function() {
-			$("#top-nav").slideToggle(400);
-		});
+	// 	//Menu mobile
+	// 	$(".btn-responsive-menu").click(function() {
+	// 		$("#top-nav").slideToggle(400);
+	// 	});
 		
-		//Check and radio input styles
-		$('input.check_radio').iCheck({
-    	checkboxClass: 'icheckbox_square-aero',
-   	    radioClass: 'iradio_square-aero'
-  		});
+	// 	//Check and radio input styles
+	// 	$('input.check_radio').iCheck({
+ //    	checkboxClass: 'icheckbox_square-aero',
+ //   	    radioClass: 'iradio_square-aero'
+ //  		});
 		
-		//Pace holder
-		$('input, textarea').placeholder();
+	// 	//Pace holder
+	// 	$('input, textarea').placeholder();
 				
-		//Carousel
-		$("#owl-demo").owlCarousel({
+	// 	//Carousel
+	// 	$("#owl-demo").owlCarousel({
  
-		items : 4,
-		itemsDesktop : [1199,3],
-		itemsDesktopSmall : [979,3]
+	// 	items : 4,
+	// 	itemsDesktop : [1199,3],
+	// 	itemsDesktopSmall : [979,3]
 		 
-		});
+	// 	});
     
-    });
+ //    });
 /*===================================================================================*/
 	/*  TWITTER FEED                                                                     */
 	/*===================================================================================*/

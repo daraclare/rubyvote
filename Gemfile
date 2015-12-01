@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 4.4'
-gem 'haml', '~> 4.0', '>= 4.0.7'
+
 gem 'factory_girl', '~> 4.5'
 gem 'pry', '~> 0.10.3'
 gem 'respond-js-rails', '~> 1.4', '>= 1.4.2.1'
@@ -36,6 +36,7 @@ gem 'bxslider-rails', '~> 4.2', '>= 4.2.5.1'
 gem 'jquery-placeholder-rails', '~> 2.1', '>= 2.1.2'
 gem 'zepto-rails', '~> 0.1.0'
 gem 'devise'
+gem 'cocoon', '~> 1.2', '>= 1.2.6'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password

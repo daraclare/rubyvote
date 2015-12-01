@@ -8,15 +8,17 @@
 
             <nav class="col-md-8 col-xs-9" id="top-nav">
                 <ul>
-                    <li><%= link_to "View polls", polls_path, :method => :get %></li>
-                    <li><%= link_to "New poll", new_poll_path, :method => :get %></li>
-                    <li><%= link_to "About", about_path, :method => :get %></li>
+               
+                  <li><%= link_to "Home", home_path, :method => :get %></li>
+                  <li><%= link_to "About", about_path, :method => :get %></li>
+                  <li><%= link_to "Demo", home_path, :method => :get %></li>
 
                     <!-- start of devise login/logout nav -->
 
                       <% if current_user %>
-                        <li><a href="#"><%= current_user.email %></a></li>
-                        <li><%= link_to "Edit profile", edit_user_registration_path %></li>
+                        <li><%= link_to "Create poll", new_poll_path, :method => :get %></li>
+                        <li><%= link_to "View polls", polls_path, :method => :get %></li>
+                        <li><%= link_to current_user.email, edit_user_registration_path %></li>
                         <li><%= link_to destroy_session_path('user'), method: :delete do %>Log out
                         <% end %>
                         </li>

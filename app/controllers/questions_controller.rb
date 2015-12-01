@@ -2,7 +2,10 @@ class QuestionsController < ApplicationController
   before_action :set_question, only: [:show, :edit, :update, :destroy]
   before_action :set_poll
   before_action :set_kind_questions
-  before_action :admin!, except: [ :index ]
+  before_action :authenticate_user!, except: [ :index ]
+  
+  
+  # before_action :admin!, except: [ :index ]
 
   # GET /questions
   # GET /questions.json
@@ -18,7 +21,7 @@ class QuestionsController < ApplicationController
   # GET /questions/new
   def new
     @question = @poll.questions.build
-    5.times { @question.possible_answers.build }
+    1.times { @question.possible_answers.build }
   end
 
   # GET /questions/1/edit
@@ -60,7 +63,7 @@ class QuestionsController < ApplicationController
   def destroy
     @question.destroy
     respond_to do |format|
-      format.html { redirect_to questions_url, notice: 'Question was successfully destroyed.' }
+      format.html { redirect_to @poll, notice: 'Question was deleted.' }
       format.json { head :no_content }
     end
   end
