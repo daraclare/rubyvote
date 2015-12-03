@@ -1,3 +1,5 @@
+<%= render "pages/home" %>
+
 <!-- Modal -->
   <div class="modal fade" id="modal_register" role="dialog">
     <div class="modal-dialog">
@@ -31,11 +33,13 @@
 		    <%= f.label :password_confirmation %><br />
 		    <%= f.password_field :password_confirmation, autocomplete: "off" %>
 		  </div>
+		  <br/>
 
 		  <div class="actions">
 		    <%= f.submit "Sign up" %>
 		  </div>
 		<% end %>
+		<br/>
 
 		<%= render "devise/shared/links" %>
         </div>

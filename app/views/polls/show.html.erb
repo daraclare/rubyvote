@@ -1,5 +1,5 @@
-<section class="container">
-    <div class="row">
+<section class="container" id="main">
+	<div class="row">
 		<div class="col-md-12">
 			<!-- <p class="notice"><%= notice %></p>
 			<p class="alert"><%= alert %></p> -->
@@ -43,7 +43,7 @@
     <% end %>
   </ul>
 <% else %>
-  <p class="bg-info flash">No questions.</p>
+  <p class="bg-info flash">You haven't added any questions yet, please <%= link_to 'add a question', new_poll_question_path(@poll)  %></p>
 <% end %>
 
 

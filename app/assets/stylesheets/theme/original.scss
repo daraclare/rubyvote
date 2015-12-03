@@ -320,10 +320,15 @@ header {
 .bar {display: block; width:18px;height:2px; margin:5px; background:#fff; -webkit-border-radius: 1px;-moz-border-radius: 1px;border-radius: 1px;}
 .show{display:block!important}
 
-#main { padding-bottom:60px; }
+#main { padding-bottom:316px; }
 
 
 /** Footer ==================== **/
+
+html, body {
+  height: 100%; //to fix the footer to the bottom
+}
+
 footer {
 	width:100%;
 	background:#333E50;
@@ -331,6 +336,15 @@ footer {
 	color:#fff;
 	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
 }
+
+.footer {
+  position: relative;
+  margin-top: -316px; /* negative value of footer height */
+  height: 316px;
+  clear:both;
+  padding-top:20px;
+} 
+
 footer a{
 	color: #FFF;
 }
