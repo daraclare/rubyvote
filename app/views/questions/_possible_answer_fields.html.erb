@@ -1,9 +1,9 @@
 <div class="nested-fields">
   <div class="field">
-    <%= f.label :Option %>
+    <% f.label :Option %>
   
-    <%= f.text_field :title, placeholder: "Enter a possible answer here" %>
+    <%= f.text_field :title, class: "form-control", placeholder: "Enter a possible answer here" %> <%= link_to_remove_association "Remove", f %>
   </div>
 
-  <%= link_to_remove_association "Remove", f %>
+  
 </div>

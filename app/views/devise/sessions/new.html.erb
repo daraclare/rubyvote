@@ -22,6 +22,7 @@
 		    <%= f.label :email %><br />
 		    <%= f.email_field :email, autofocus: true %>
 		  </div>
+		  <br/>
 
 		  <div class="field">
 		    <%= f.label :password %><br />
@@ -34,17 +35,17 @@
 		      <%= f.label :remember_me %>
 		    </div>
 		  <% end -%>
+		   <%= render "devise/shared/links" %>
 
-		  <div class="actions">
-		    <%= f.submit "Log in" %>
+
+		    <div class="modal-footer">
+		    <%= f.submit "LOG IN", class: "btn btn-default" %>
 		  </div>
 	  <% end %>
 
-	  <%= render "devise/shared/links" %>
+	 
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
+       
       </div>
       
     </div>

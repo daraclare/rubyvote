@@ -11,7 +11,9 @@
 
 	<ul class="poll-list">
 		<% @polls.each do |poll| %>
-		<li class="poll-list"><h4><%= link_to poll.title, poll_path(poll.id) %></h4><p><%= link_to "Answer this poll", new_poll_reply_path(poll) %></p></li>
+		<li class="poll-list"><h4><%= link_to poll.title, poll_path(poll.id) %></h4><p class="sub-options"><%= link_to 'Edit', poll_path(poll.id) %> | <%= link_to "Answer", new_poll_reply_path(poll) %> | <%= link_to 'Delete', poll, :method => :delete, :data => { :confirm => 'Are you sure?' } %></p></li>
+
+
 
 		<% end %>
 	</ul>
