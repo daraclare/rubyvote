@@ -10,9 +10,22 @@ html, body {
     height: 100%;
 }
 
+h1.poll-title {
+    text-align:left;
+}
+
+p.poll-nav a {
+    margin: 0;
+
+}
+
 div#wrapper {
     min-height: 100%;
     position: relative;
+}
+
+input#multiple-choice {
+    width: 30%;
 }
 
 

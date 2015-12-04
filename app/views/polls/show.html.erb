@@ -25,23 +25,23 @@
 
 
 			<!-- new -->
-			<dl>
 
 			<% if @poll.questions.any? %>
-
+  <ul>
     <% @poll.questions.each do |question| %>
-     
-        <dt><%= question.title %> <%= link_to "Remove question", poll_question_path(@poll, question), method: :delete %></dt>
-        
-     
-          <dd> <% question.possible_answers.each do |possible_answer| %></dd>
-           
-              <dd> <%= possible_answer.title %></dd>
-           
+      <li>
+        <%= question.title %>
+        <%= link_to "Drop question", poll_question_path(@poll, question), method: :delete %>
+        <ul>
+          <% question.possible_answers.each do |possible_answer| %>
+            <li>
+              <%= possible_answer.title %>
+            </li>
           <% end %>
+        </ul>
+      </li>
     <% end %>
-     </dl>
-  
+  </ul>
 <% else %>
   <p class="bg-info flash">You haven't added any questions yet, please <%= link_to 'add a question', new_poll_question_path(@poll)  %></p>
 <% end %>

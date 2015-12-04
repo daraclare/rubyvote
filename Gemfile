@@ -37,6 +37,7 @@ gem 'jquery-placeholder-rails', '~> 2.1', '>= 2.1.2'
 gem 'zepto-rails', '~> 0.1.0'
 gem 'devise'
 gem 'cocoon', '~> 1.2', '>= 1.2.6'
+gem 'decuss'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password

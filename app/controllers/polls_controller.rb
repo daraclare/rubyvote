@@ -80,4 +80,9 @@ class PollsController < ApplicationController
 
       redirect_to root_path, notice: "Please log in as an administrator before continuing" unless current_user.admin? 
     end
+
+    # decuss censorship
+    def censor
+      
+    end
 end
