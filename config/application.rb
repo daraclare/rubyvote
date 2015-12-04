@@ -25,5 +25,7 @@ module Rubyvote
 
     #images will show in Heroku
     config.assets.initialize_on_precompile = false
+
+    config.autoload_paths << Rails.root.join('lib')
   end
 end

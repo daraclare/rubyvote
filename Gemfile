@@ -37,7 +37,10 @@ gem 'jquery-placeholder-rails', '~> 2.1', '>= 2.1.2'
 gem 'zepto-rails', '~> 0.1.0'
 gem 'devise'
 gem 'cocoon', '~> 1.2', '>= 1.2.6'
-gem 'decuss'
+gem 'decuss', '~> 0.1.1'
+gem 'twitter'
+gem 'social-share-button'
+gem 'share'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
@@ -59,6 +62,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   gem 'minitest', '~> 5.8', '>= 5.8.2'
+  gem 'dotenv-rails'
 end
 
 group :development do
