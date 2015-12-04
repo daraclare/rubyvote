@@ -60,7 +60,7 @@ GEM
       execjs
     coffee-script-source (1.9.1.1)
     debug_inspector (0.0.2)
-    decuss (0.1.1)
+    decuss (0.1.2)
     devise (3.5.2)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -239,7 +239,7 @@ DEPENDENCIES
   byebug
   cocoon (~> 1.2, >= 1.2.6)
   coffee-rails (~> 4.1.0)
-  decuss (~> 0.1.1)
+  decuss (~> 0.1.2)
   devise
   dotenv-rails
   factory_girl (~> 4.5)
