@@ -12,8 +12,7 @@ class RepliesController < ApplicationController
   end
 
   def create
-    @reply = @poll.replies.build reply_params
-    # @reply.answers_attributes = @reply.answers_attributes.censor
+    @reply = @poll.replies.build(reply_params)
 
     respond_to do |format|
       if @reply.save
