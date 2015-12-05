@@ -14,7 +14,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.0', '>= 4.0.4'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -34,13 +34,12 @@ gem 'fancybox', '~> 0.0.20'
 gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
 gem 'bxslider-rails', '~> 4.2', '>= 4.2.5.1'
 gem 'jquery-placeholder-rails', '~> 2.1', '>= 2.1.2'
-gem 'zepto-rails', '~> 0.1.0'
 gem 'devise'
 gem 'cocoon', '~> 1.2', '>= 1.2.6'
 gem 'decuss', '~> 0.1.2'
 gem 'twitter'
 gem 'social-share-button'
-gem 'share'
+gem 'rails_admin'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password

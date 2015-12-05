@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
 resources :polls do
   resources :questions
@@ -10,6 +11,7 @@ end
   get 'polls' => "polls#index"
   get 'home' => "pages#home"
   get 'about' => "pages#about"
+  get 'admin' => "admin"
 
 
   resources :pages

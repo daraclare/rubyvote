@@ -20,6 +20,10 @@
                         <li><%= link_to "View polls", polls_path, :method => :get %></li>
                         <li><%= link_to current_user.email, edit_user_registration_path %></li>
                         <li><%= link_to destroy_session_path('user'), method: :delete do %>Log out
+                        <% if current_user.admin? %>
+                         <li><%= link_to "Admin", admin_path, :method => :get %></li>
+                         <% end %>
+
                         <% end %>
                         </li>
 
