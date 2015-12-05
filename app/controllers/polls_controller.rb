@@ -16,17 +16,19 @@ class PollsController < ApplicationController
 
   # GET /polls/new
   def new
-    @poll = Poll.new
+    @poll = current_user.polls.build
   end
 
   # GET /polls/1/edit
   def edit
+
   end
 
   # POST /polls
   # POST /polls.json
   def create
-    @poll = Poll.new(poll_params)
+    @poll = current_user.polls.build(poll_params)
+    @poll.title = @poll.title.censor
 
     respond_to do |format|
       if @poll.save
@@ -80,9 +82,5 @@ class PollsController < ApplicationController
 
       redirect_to root_path, notice: "Please log in as an administrator before continuing" unless current_user.admin? 
     end
-
-    # decuss censorship
-    def censor
-      
-    end
+   
 end

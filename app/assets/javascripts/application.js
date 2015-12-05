@@ -36,7 +36,7 @@
 //= require zepto
 //= require modal
 //= require cocoon
-
+//= require social-share-button
 
 
 //= require mobile-menu

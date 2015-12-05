@@ -32,6 +32,7 @@ class QuestionsController < ApplicationController
   # POST /questions.json
   def create
     @question = @poll.questions.build(question_params)
+    @question.title = @question.title.censor
 
     respond_to do |format|
       if @question.save

@@ -8,17 +8,23 @@
   	<p class="bg-info flash">You haven't created any polls yet</p>
 	<% end %>
 
+
+
 	<ul class="poll-list">
 		<% @polls.each do |poll| %>
+		<% if poll.user == current_user %>
 		<li class="poll-list"><h4><%= link_to poll.title, poll_path(poll.id) %></h4><p class="sub-options">
 
-		
+	
 
 		<%= link_to 'Edit', poll_path(poll.id) %> | <%= link_to "Answer", new_poll_reply_path(poll) %> | <%= link_to 'Delete', poll, :method => :delete, :data => { :confirm => 'Are you sure?' } %></p></li>
 
 
 
+
+
 		<% end %>
+<% end %>
 	</ul>
 
 <button class="button_start"><%= link_to 'Create New Poll', new_poll_path %></button>

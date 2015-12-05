@@ -3,9 +3,14 @@
 		<div class="col-md-12">
 			<!-- <p class="notice"><%= notice %></p>
 			<p class="alert"><%= alert %></p> -->
-			
+			<br/>
 
-			<h1><%= @poll.title %></h1>
+			<h1><%= @poll.title %></h1> 	
+			<!-- start twitter button -->
+
+
+
+			<!-- end twitter button -->
 
 <!-- start of tabs -->
 	<div>
@@ -27,25 +32,27 @@
 
 			<!-- new -->
 
+
 			<% if @poll.questions.any? %>
-  <ul>
+  <dl>
     <% @poll.questions.each do |question| %>
-      <li>
+      <dt>
         <%= question.title %>
         <%= link_to "Drop question", poll_question_path(@poll, question), method: :delete %>
-        <ul>
+        <dt>
           <% question.possible_answers.each do |possible_answer| %>
-            <li>
+            <dd>
               <%= possible_answer.title %>
-            </li>
+            </dd>
           <% end %>
-        </ul>
-      </li>
+ 
     <% end %>
-  </ul>
+  </dl>
 <% else %>
   <p class="bg-info flash">You haven't added any questions yet, please <%= link_to 'add a question', new_poll_question_path(@poll)  %></p>
 <% end %>
+
+
 
 
 
@@ -59,8 +66,13 @@
 				<%= link_to 'Rename', edit_poll_path(@poll), class: "btn btn-default" %>
 				<%= link_to 'All Polls', polls_path, class: "btn btn-default"  %>
 				<%= link_to 'Add question', new_poll_question_path(@poll), class: "btn btn-default"  %>
-				<%= link_to 'Answer Questions', new_poll_reply_path(@poll), class: "btn btn-default"  %>
 				</p>
+
+				<p><%= link_to 'View Poll and Share on Twitter', new_poll_reply_path(@poll), class: "btn btn-default share-button"  %></p>
+
+<!-- 		<%= social_share_button_tag(@poll.title, :popup => "true") %>
+
+		<%= social_share_button_tag(@poll.title, :popup => "true", :url => "new_poll_reply_path(@poll)") %> -->
 
 
 			</div>
