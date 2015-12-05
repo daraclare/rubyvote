@@ -14,7 +14,11 @@
 
 			<% end %>
 
+			<% if current_user %>
+
 			<%= social_share_button_tag(@poll.title, :popup => "true") %>
+
+			<% end %>
 
 		</div>
 
