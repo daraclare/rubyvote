@@ -40,18 +40,21 @@
     <% end %>
   </div>
 
-            <label>Add multiple choice options:</label>
+ 
+            <label>Choose 'open answer' or add at least 2 multiple choice options:</label>
+              <div id="possible_answers">
+                <%= f.fields_for :possible_answers do |possible_answer| %>
+                  <%= render 'possible_answer_fields', f: possible_answer %>
+                <% end %>
 
-  <div id="possible_answers">
-    <%= f.fields_for :possible_answers do |possible_answer| %>
-      <%= render 'possible_answer_fields', f: possible_answer %>
-    <% end %>
+                <div class="links">
+                  <%= link_to_add_association 'Add Options', f, :possible_answers %>
 
-    <div class="links">
-      <%= link_to_add_association 'Add Options', f, :possible_answers %>
+                </div>
+              </div>
 
-    </div>
-  </div>
+
+
 <%= f.hidden_field :poll_id %>
             <div class="actions">
               <%= f.submit 'Save', class: "btn btn-primary" %>

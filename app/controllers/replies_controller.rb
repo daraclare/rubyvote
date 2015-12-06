@@ -16,7 +16,7 @@ class RepliesController < ApplicationController
 
     respond_to do |format|
       if @reply.save
-        format.html { redirect_to @poll, notice: "Thank you for taking the poll." }
+        format.html { redirect_to home_path, notice: "Thank you for taking the poll." }
       else
         format.html { render :new }
       end

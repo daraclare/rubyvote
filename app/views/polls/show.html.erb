@@ -1,84 +1,59 @@
 <section class="container" id="main">
 	<div class="row">
 		<div class="col-md-12">
-			<!-- <p class="notice"><%= notice %></p>
-			<p class="alert"><%= alert %></p> -->
 			<br/>
-
-			<h1><%= @poll.title %></h1> 	
-			<!-- start twitter button -->
-
-
-
-			<!-- end twitter button -->
+			<h2 class="steps">Step 2: Add questions to your poll</h2>
+			<br/>
+			<h1 class="poll_headings"><%= @poll.title %></h1> 	
 
 <!-- start of tabs -->
 	<div>
 
-	<!-- Nav tabs -->
+<!-- nav tabs -->
 		<ul class="nav nav-tabs" role="tablist">
-			<li role="presentation" class="active">
-			<%= link_to "Questions", "#tab-questions", data: { toggle: "tab"} %></li>
-			<li role="presentation">
-			<%= link_to "View Replies", "#tab-replies", data: { toggle: "tab"} %></li>
+			<li role="presentation" class="active"><%= link_to "Questions", "#tab-questions", data: { toggle: "tab"} %></li>
+			<li role="presentation"><%= link_to "View Replies", "#tab-replies", data: { toggle: "tab"} %></li>
 		</ul>
 
-	<!-- Tab panes -->
+<!-- start of questions tab -->
 		<div class="tab-content">
 			<div role="tabpanel" class="tab-pane active" id="tab-questions">
 
-
-			<!-- new -->
-
-
 			<% if @poll.questions.any? %>
-  <dl>
-  	<% @poll.questions.each do |question| %>
-      <dt><%= question.title %> <%= link_to "Delete question", poll_question_path(@poll, question), method: :delete %></dt>
-      
-          <% question.possible_answers.each do |possible_answer| %>
-            
-              <dd><%= possible_answer.title %></dd>
-          <% end %>
- 
-    <% end %>
-  </dl>
-<% else %>
-  <p class="bg-info flash">You haven't added any questions yet, please <%= link_to 'add a question', new_poll_question_path(@poll)  %></p>
-<% end %>
-
-
-
-
-
-
-			<!-- end of new -->
-			
-
+				  <dl>
+				  	<% @poll.questions.each do |question| %>
+				      <dt><%= question.title %> <%= link_to "Delete question", poll_question_path(@poll, question), method: :delete %></dt>
+				      
+				          <% question.possible_answers.each do |possible_answer| %>
+				            
+				              <dd><%= possible_answer.title %></dd>
+				          <% end %>
+				 
+				    <% end %>
+				    <br/>
+				    <%= link_to 'ADD ANOTHER QUESTION', new_poll_question_path(@poll)  %>
+				  </dl>
+				<% else %>
+				  <p class="bg-info flash">You haven't added any questions yet, please <%= link_to 'click here to add a question', new_poll_question_path(@poll)  %></p>
+			<% end %>
 
 				<p class="btn-group"> 
 			
 				<%= link_to 'Rename', edit_poll_path(@poll), class: "btn btn-default" %>
 				<%= link_to 'All Polls', polls_path, class: "btn btn-default"  %>
-				<%= link_to 'Add question', new_poll_question_path(@poll), class: "btn btn-default"  %>
+				<%= link_to 'Answer Poll', new_poll_reply_path(@poll), class: "btn btn-default"  %>
 				</p>
 
 				<p><%= link_to 'View Poll and Share on Twitter', new_poll_reply_path(@poll), class: "btn btn-default share-button"  %></p>
 
-<!-- 		<%= social_share_button_tag(@poll.title, :popup => "true") %>
-
-		<%= social_share_button_tag(@poll.title, :popup => "true", :url => "new_poll_reply_path(@poll)") %> -->
-
-
 			</div>
-			<!-- end of questions tabs -->
+<!-- end of questions tabs -->
 
-			<!-- start of replies tab -->
+<!-- start of replies tab -->
 			<div role="tabpanel" class="tab-pane" id="tab-replies">
 
 			<% if @poll.replies.any? %>
 
-			
 				<% @poll.replies.each do |reply| %>
 				<div>
 					<div>
@@ -93,7 +68,7 @@
 						</div>
 
 						<% else %>
-						<p class="bg-info flash">You haven't added any replies yet, please <%= link_to 'reply to a question', new_poll_reply_path(@poll)  %></p>
+						<p class="bg-info flash">You haven't added any replies yet, please <%= link_to 'click here to add a reply to the poll', new_poll_reply_path(@poll) %></p>
 						<% end %>
 					</div>
 				</div>
@@ -104,24 +79,7 @@
 
 	</div>
 <!-- end of tabs -->
-			
-
-
-
-
-				
-
-			
-
-
-
-			
-
-
-
-
 
 		</div>
     </div>
 </section>
-        

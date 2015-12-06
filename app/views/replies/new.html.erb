@@ -1,12 +1,27 @@
 <section class="container" id="main">
 	<div class="row">
 		<div class="col-md-12">
+		<br/>
 
-			<h1> <%= @poll.title %> </h1>
+			
+
+			<% if current_user %>
+
+			<h2 class="steps">Step 3: Review your poll and share on Twitter</h2>
+			<br/>
+
+			<%= social_share_button_tag(@poll.title, :popup => "true") %>
+
+			<% end %>
+			<br/>
+
+			<h1 class="poll_headings"> <%= @poll.title %> </h1>
+
+			<br/>
 
 			<%= form_for [ @poll, @reply ] do |f| %>
 			<%= f.fields_for :answers do |c|  %>
-			<!-- <p><label><%= c.object.question.title %></label></p> -->
+			
 			<%= render c.object.question.kind, c: c %>
 
 			<% end %>
@@ -14,11 +29,7 @@
 
 			<% end %>
 
-			<% if current_user %>
-
-			<%= social_share_button_tag(@poll.title, :popup => "true") %>
-
-			<% end %>
+			
 
 		</div>
 
