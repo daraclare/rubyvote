@@ -1,5 +1,5 @@
 <section class="container" id="main">
-	<div class="row">
+	<div class="row" id="poll-index-height">
 		<div class="col-md-12">
 			<br/>
 			<h2 class="steps">Step 2: Add questions to your poll</h2>
@@ -68,7 +68,7 @@
 						</div>
 
 						<% else %>
-						<p class="bg-info flash">You haven't added any replies yet, please <%= link_to 'click here to add a reply to the poll', new_poll_reply_path(@poll) %></p>
+						<p class="bg-info flash">You have no replies yet, please <%= link_to 'click here to add a reply to the poll', new_poll_reply_path(@poll) %></p>
 						<% end %>
 					</div>
 				</div>
