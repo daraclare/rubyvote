@@ -17,21 +17,7 @@
                     </ul>    
         </div>
         
-        <div class="col-md-4">
-            <h3>Latest tweet</h3>
-
-<ul>
-  <% TwitterApi.app_tweets.each do |tweet| %>
-    <li><%= tweet.text %></li>
-  <% end %>
-</ul>
-
-             <div class="latest-tweets" data-number="10" data-username="daraclare" data-mode="fade" data-pager="false" data-nextselector=".tweets-next" data-prevselector=".tweets-prev" data-adaptiveheight="true"></div>
-              <div class="tweet-control">
-                <div class="tweets-prev"></div>
-                <div class="tweets-next"></div>
-              </div><!-- End .tweet-control -->
-        </div><!-- End col-md-4 -->
+     
         
     </div><!-- end row -->
     </section>
